@@ -6,8 +6,8 @@ const Home = () => {
         <div className='container '>
           <h1>Car Parking System</h1>
         </div>
-        <div className='img-holder'>
-          <img src="../../../images/car-park3.jpg" width="100%" height="100%" alt="Car"></img>
+        <div className='img-holder' style={{textAlign : 'center'}}>
+          <img src="../../../images/car-park3.jpg" height="80%" width="80%" alt="Car" ></img>
         </div>
     </div>
   )

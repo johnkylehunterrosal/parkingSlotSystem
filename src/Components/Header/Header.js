@@ -19,9 +19,9 @@ const Header = () => {
             <Link to="/parking-slots" className='pad-left-20 main-text-Color '>
               Parking Slots
             </Link> 
-            <Link to="" className='pad-left-20 main-text-Color'>
+            <div className='pad-left-20 main-text-Color'>
               Summary Reports
-            </Link> 
+            </div> 
           </div>  
         </div>
         

@@ -1,5 +1,5 @@
 import React, {} from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Header from './Components/Header/Header';
 import MainRoutePage from './Components/MainRoutePage/MainRoutePage';
 import 'materialize-css'; // It installs the JS asset only
@@ -7,15 +7,14 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 const App = () => {
     return (
-        <Router>
+        <BrowserRouter>
           <div>
             <Header/>
           </div>
           <div>
             <MainRoutePage/>
           </div>
-        </Router>
-       
+        </BrowserRouter>   
   );
 }
 export default App;

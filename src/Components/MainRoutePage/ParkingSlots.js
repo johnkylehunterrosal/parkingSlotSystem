@@ -3,6 +3,7 @@ import CardA from './CardA'
 import CardB from './CardB'
 import CardC from './CardC'
 import moment from 'moment'
+import Modal, {closeStyle} from 'simple-react-modal'
 
 const ParkingSlots = (props) => {
  
@@ -139,7 +140,7 @@ const ParkingSlots = (props) => {
       return {...prevState, modified}
       })
       setCarInformation(prevState => {
-        return{...prevState, plate: "", size : "", entryPoint : "", timeStarted : "", name : ""}
+        return{...prevState, plate: "", size : "", entryPoint : "", timeStarted : "", name : "", price : 40}
       })
       setIsSubmitForm(false)
   }
@@ -157,7 +158,7 @@ const ParkingSlots = (props) => {
       return {...prevState, modified }
       })
       setCarInformation(prevState => {
-        return{...prevState, plate: "", size : "", entryPoint : "", timeStarted : "", name : ""}
+        return{...prevState, plate: "", size : "", entryPoint : "", timeStarted : "", name : "", price : 40}
       })
       setIsSubmitForm(false)
   }
@@ -216,10 +217,9 @@ const ParkingSlots = (props) => {
     </div>
     <div className='button-holder'>
       <a class="waves-effect waves-light btn-small #8bc34a light-green" onClick={openSubmitForm}>Park</a> 
-    </div>
-    <div className='submit-form-holder'>
+      <Modal show={isSumbmitForm}>
+      <div className='submit-form-holder' style={{marginTop : '50px'}}>
       {isSumbmitForm &&
-      <div class="card">
         <div class="card-content">
             <div className='d-flex-row'>
             <div className='width-48per'>
@@ -252,9 +252,13 @@ const ParkingSlots = (props) => {
               }  
             </div>
         </div>
-      </div>
       }
     </div>
+      </Modal>
+
+      
+    </div>
+    
     <div className='slots'>
       <div className='slot-a'>
         <h3 className='text-align-center'> Entry Point A </h3>
