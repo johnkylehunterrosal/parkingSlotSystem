@@ -1,0 +1,61 @@
+.home  > .container > h1 {
+    text-align: center;
+}
+.home > .img-holder {
+    height: 400px;
+}
+.parking-slots > .container {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.container > .plate-no {
+    width: 30%;
+    
+}
+.container > .size{
+    width: 30%;
+    
+}
+.container > .entry-point{
+    width: 30%;
+}
+.button-holder {
+    display: flex;
+    justify-content: center;
+}
+.slots {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.slot-a {
+    width: 30%;
+}
+.slot-b {
+    width: 30%;
+}
+.slot-c {
+    width: 30%;
+}
+.card {
+    height: 200px;
+}
+.card-content {
+    height: 200px;
+}
+.submit-form-holder {
+    display: flex;
+    justify-content: center;
+}
+.submit-form-holder > .card {
+    height: 150px;
+    width: 500px;
+}
+.submit-form-holder > .card > .card-content {
+    width: 100%;
+}

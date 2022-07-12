@@ -1,0 +1,23 @@
+.header {
+    color: antiquewhite;
+    height: 70px;
+}
+.header > .container {
+    display: flex;
+}
+.header-title {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 500;
+}
+.header-links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
