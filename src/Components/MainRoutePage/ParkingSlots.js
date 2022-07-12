@@ -192,7 +192,6 @@ const ParkingSlots = (props) => {
   return (
     <div className='parking-slots'>
       { hasErrors && <div style={{height : '30px', backgroundColor : '#fc6567', color : 'white', textAlign : 'center'}}> {hasErrors} </div>}
-      {JSON.stringify(carInformation)} <br/>
       <div className='container'>
         <div class="input-field plate-no">
           <textarea id="textarea1" class="materialize-textarea" value={carInformation && carInformation.plate || ""} onChange={handlePlate}></textarea>
