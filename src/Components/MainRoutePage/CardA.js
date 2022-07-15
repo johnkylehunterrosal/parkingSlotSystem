@@ -8,6 +8,7 @@ const CardA = (props) => {
   const [parkingDetails, setParkingDetails] = useState({});
   const [hoursRendered, setHoursRendered] = useState(0);
   const [finalPrice, setFinalPrice] = useState(40)
+
   const openUnparkModal = (event) => {
     setIsUnparking(true);
     let selectedParkingSlot = props.parkingSlots.entryPointA.find((slot) => {
@@ -45,18 +46,19 @@ const CardA = (props) => {
               console.log('condtion selected slot', parkingDetails.name)
               slot.availability = true
             }
-            return slot;
+            console.log(parkingDetails, "HELLOOOOO")
+            return slot, slot.plate = "", slot.timeStarted = "";
           });
-      return ({...prevState, modifiedParking });
+      return ({...prevState, modifiedParking});
     })
     setIsUnparking(false)
+    
 
   }
   return (
     <div>
       {props.parkingSlots.entryPointA.map((slot) =>
         <>
-       
           <div class="card" key={props.parkingSlots.id}>
             <div class={!slot.availability ? `card-content #8bc34a #e57373 red lighten-2` : `card-content #8bc34a light-green`}>
               <div className='text-align-center'>

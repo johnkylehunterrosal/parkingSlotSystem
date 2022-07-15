@@ -44,7 +44,7 @@ const CardB = (props) => {
               console.log('condtion selected slot', parkingDetails.name)
               slot.availability = true
             }
-            return slot;
+            return slot, slot.plate = "", slot.timeStarted = "";
           });
       return ({...prevState, modifiedParking });
     })
@@ -55,7 +55,6 @@ const CardB = (props) => {
     <div>
       {props.parkingSlots.entryPointB.map((slot) =>
         <>
-        {JSON.stringify(slot.availability)}
           <div class="card" key={props.parkingSlots.id}>
             <div class={!slot.availability ? `card-content #8bc34a #e57373 red lighten-2` : `card-content #8bc34a light-green`}>
               <div className='text-align-center'>

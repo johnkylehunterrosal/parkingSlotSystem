@@ -21,10 +21,10 @@ const MainRoutePage = (props) => {
           name: "A4s", plate: "", size : "Small", timeStarted : "", timeEnded : "", availability : true, price : 20
         },
         {
-          name: "A1m", plate: "pnz321", size : "Medium", timeStarted : 1657593631000, timeEnded : "", availability : false, price : 60
+          name: "A1m", plate: "", size : "Medium", timeStarted : "", timeEnded : "", availability : true, price : 60
         },
         {
-          name : "A2m", plate: "nnn678", size : "Medium",timeStarted : 1657507231000, timeEnded : "", availability : false, price : 60
+          name : "A2m", plate: "", size : "Medium",timeStarted : "", timeEnded : "", availability : true, price : 60
         },
         {  
           name: "A3m", plate: "", size : "Medium", timeStarted : "", timeEnded : "", availability : true, price : 60

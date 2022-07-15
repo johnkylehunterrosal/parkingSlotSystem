@@ -27,7 +27,7 @@ const ParkingSlots = (props) => {
 // ---------------------------------------------------------------->
 
 // ------------------------------------------------------------------->
-// parkButton: Checks Availability nearest parking per entrypoint
+// parkButton: Checks Availability of the nearest parking per entrypoint
   const openSubmitForm = (e) => setCarInformation(prevState => {
     setIsSubmitForm(true)
     computeTime(carInformation.timeStarted)
@@ -46,7 +46,7 @@ const ParkingSlots = (props) => {
           if (typeof nearestAvailableParkingLarge === 'undefined') {
             console.error('no parking found now on Entrypoint A')
           } else {
-            //save it on large
+            //save it on large1
             console.log('has chosen large', nearestAvailableParkingSmall)
             carResult = nearestAvailableParkingLarge
           }
